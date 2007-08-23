@@ -2,7 +2,6 @@ package HTML::WidgetValidator::Widget;
 use base qw(Class::Data::Inheritable);
 use warnings;
 use strict;
-use HTML::WidgetDetector::Result;
 
 __PACKAGE__->mk_classdata('models'      => [] );
 __PACKAGE__->mk_classdata('name'        => undef );

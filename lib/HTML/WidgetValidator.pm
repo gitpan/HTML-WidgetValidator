@@ -4,7 +4,7 @@ use strict;
 use HTML::WidgetValidator::HTMLParser;
 use HTML::WidgetValidator::WidgetContainer;
 
-our $VERSION = '0.0.1';
+our $VERSION = '0.0.2';
 
 sub new {
     my ($class, %args) = @_;
@@ -42,7 +42,7 @@ HTML::WidgetValidator - Perl framework for validating various widget HTML snipet
 
 =head1 VERSION
 
-This document describes HTML::WidgetValidator version 0.0.1
+This document describes HTML::WidgetValidator version 0.0.2
 
 
 =head1 SYNOPSIS
