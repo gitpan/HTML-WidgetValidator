@@ -1,0 +1,35 @@
+HTML-WidgetValidator version 0.0.1
+
+HTML::WidgetValidator is a framework to identify whtat widget the passed HTML snipet is.
+You can set the names of widget that you want to detect, and pass the HTML snipet to the detect
+method, it will return the name of widget if the snipet was associate with one of the widget
+which you set.
+
+Detection is done by matching the pattern of the text or the regular expression.
+HTML snipet must be one HTML element like  '<script>..</script>' or
+'<object><param/><param/></object>'.
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+    perl Makefile.PL
+    make
+    make test
+    make install
+
+
+Alternatively, to install with Module::Build, you can use the following commands:
+
+    perl Build.PL
+    ./Build
+    ./Build test
+    ./Build install
+
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2007, Takaaki Mizuno
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
