@@ -2,7 +2,6 @@ package HTML::WidgetValidator::Widget::Rimo;
 use base qw(HTML::WidgetValidator::Widget);
 use warnings;
 use strict;
-use Carp;
 
 __PACKAGE__->name('Rimo');
 __PACKAGE__->url('http://rimo.tv/');

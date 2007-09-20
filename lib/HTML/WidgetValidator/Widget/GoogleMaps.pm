@@ -15,11 +15,11 @@ __PACKAGE__->models(
                 name => 'iframe',
                 type => 'start',
                 attr => {
-                    src          => qr{http://maps[.]google[.](?:com|co[.]jp)/(?:maps)?[?][A-Za-z0-9%=&\-_\.+,:]+},
+                    src          => qr{http://maps[.]google[.](?:com|co[.]jp)/(?:maps(?:/ms)?)?[?][A-Za-z0-9%=&\-_\.\+,:\;]+},
                     width        => qr{\d{2,3}},
                     height       => qr{\d{2,3}},
                     scrolling    => 'no',
-                    frameborder  => 'no',
+                    frameborder  => qr{no|0},
                     marginwidth  => '0',
                     marginheight => '0',
                 },

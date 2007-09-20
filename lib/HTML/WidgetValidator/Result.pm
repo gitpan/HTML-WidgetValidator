@@ -2,7 +2,6 @@ package HTML::WidgetValidator::Result;
 use base qw(Class::Accessor::Fast);
 use warnings;
 use strict;
-use Carp;
 
 __PACKAGE__->mk_accessors(qw(widget elements));
 

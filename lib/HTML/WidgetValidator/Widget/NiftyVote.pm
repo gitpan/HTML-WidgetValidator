@@ -2,7 +2,6 @@ package HTML::WidgetValidator::Widget::NiftyVote;
 use base qw(HTML::WidgetValidator::Widget);
 use warnings;
 use strict;
-use Carp;
 
 __PACKAGE__->name('NiftyVote');
 __PACKAGE__->url('http://vote.nifty.com/');

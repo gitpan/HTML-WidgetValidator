@@ -1,7 +1,6 @@
 package HTML::WidgetValidator::HTMLParser;
 use warnings;
 use strict;
-use Carp;
 use HTML::Parser;
 use HTML::WidgetValidator::HTMLElement;
 
@@ -33,6 +32,7 @@ sub starthandler {
     my $self = shift;
     return sub {
         my ($text, $tag, $attr) = @_;
+	$text =~ s|/>$|>|;
 	push @{$self->{result}},
 	    HTML::WidgetValidator::HTMLElement->new(
 		type=>'start',name=>$tag,attr=>$attr,text=>$text );

@@ -1,4 +1,4 @@
-HTML-WidgetValidator version 0.0.2
+HTML-WidgetValidator version 0.0.3
 
 When HTML code is passed to HTML::WidgetValidator, it will analyze the code to see what kind
 of Widget it is for. It is possible to pre-specify the type of Widget that will be detected

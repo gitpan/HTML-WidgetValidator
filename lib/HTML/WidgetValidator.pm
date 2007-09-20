@@ -4,7 +4,7 @@ use strict;
 use HTML::WidgetValidator::HTMLParser;
 use HTML::WidgetValidator::WidgetContainer;
 
-our $VERSION = '0.0.2';
+our $VERSION = '0.0.3';
 
 sub new {
     my ($class, %args) = @_;
@@ -42,13 +42,13 @@ HTML::WidgetValidator - Perl framework for validating various widget HTML snipet
 
 =head1 VERSION
 
-This document describes HTML::WidgetValidator version 0.0.2
+This document describes HTML::WidgetValidator version 0.0.3
 
 
 =head1 SYNOPSIS
 
     use HTML::WidgetValidator;
-    my $validator = HTML::WidgetValidator->new(widgets => [ 'YahooWeatherJP','YahooTopicsJP' ]);
+    my $validator = HTML::WidgetValidator->new;
     my $result  = $validator->validate($html);
     my $code = $result->code;
     my $name = $result->name;
